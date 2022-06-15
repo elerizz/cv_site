@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,800;1,600&display=swap");
+
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.9rem;
+  color: white
+}
+
+span {
+  font-weight: 600;
+}
+
+.title {
+  display: flex;
+  font-size: 0.6rem;
+  margin: 20px 30px;
+  justify-content: left;
+  align-items: center;
+}
+
+.title img {
+  height: 35px;
+}
+
+.main-navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.card {
+  border: 2px solid blue;
+  margin: 20px 30px;
+  color: white;
+  border-radius: 2%;
+  width: 67%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  border-radius: 0 2% 2% 0;
+  width: 67%;
+  max-width: 200px;
+}
+
+.card h1 {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.contact {
+  margin: 5px 33% 5px 5px;
+  border-radius: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact button {
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  border-radius: 10%
+  padding: 10px 14px;
+  background: rgb(34, 195, 134);
+  background: radial-gradient(
+    circle,
+    rgba(34, 195, 134, 0) 28%,
+    rgba(45, 214, 253, 1) 100%
+  );
+  border: 0;
+  border-radius: 28px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact button:active {
+  transform: scale(110%);
+}
+.paragraph {
+  margin: 20px 30px;
+}
+
+section{
+  display: flex;
+  border: 2px solid blue;
+  margin: 20px 30px;
+  border-radius: 5px;;
+}
+
+@media only screen and (min-width: 768px) {
+ 
+  .section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section:hover, .card:hover {
+    transform: scaleX(1.05);
+    transition: 0.35s;
+  }
+
+}
+
